@@ -50,7 +50,7 @@ sudo vim YOUR_CLONED_REPO_NAME
 server {
     listen 80;
     location / {
-        proxy_pass http://{{PRIVATE IP FROM EC2 INSTANCE}}:{{NODE-PROJECT-PORT}};
+        proxy_pass http://PRIVATE_IP_FROM_EC2_INSTANCE:NODE_PROJECT_PORT;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection 'upgrade';
@@ -100,8 +100,8 @@ sudo npm install
 **then**
 
 ```bash
-cd clientsudo
-npm install 
+cd client
+sudo npm install 
 ```
 
 * **NOTE\* Only run build IF you didn’t push your build folder to your github! If it doesn't work, you most** likely **already have it! move on!**

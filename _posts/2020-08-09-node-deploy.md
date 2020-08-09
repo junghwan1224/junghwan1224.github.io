@@ -31,7 +31,7 @@ sudo apt-get install nginx git -y
 
 ```bash
 cd /var/www
-sudo git clone {{ project path on github(or others) }}
+sudo git clone {project path on github(or others)}
 ```
 
 * git clone 후 npm install(혹은 yarn) 명령어는 아직 실행하지 않는다. 다음 단계에서 실행할 예정
@@ -43,7 +43,7 @@ sudo git clone {{ project path on github(or others) }}
 ```bash
 sudo apt-get install -y build-essential openssl libssl-dev pkg-config
 cd /etc/nginx/sites-available
-sudo vim {{your cloned repo’s name}}
+sudo vim {your cloned repo’s name}
 ```
 
 ```bash
@@ -73,7 +73,7 @@ sudo rm default
 **Create a symbolic link from sites-enabled to sites-available**
 
 ```bash
-sudo ln -s /etc/nginx/sites-available/{{repo name}} /etc/nginx/sites-enabled/{{repo name}}
+sudo ln -s /etc/nginx/sites-available/{repo name} /etc/nginx/sites-enabled/{repo name}
 ```
 
 
@@ -90,8 +90,8 @@ sudo rm /etc/nginx/sites-enabled/default
 
 ```bash
 sudo npm install pm2 -gcd /var/www/sudo 
-chown -R ubuntu {{AppName}}
-cd {{AppName}}
+chown -R ubuntu {AppName}
+cd {AppName}
 sudo npm install
 ```
 

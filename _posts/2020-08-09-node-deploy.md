@@ -7,7 +7,7 @@ category: Deployment
 
 ## Deploy Express on EC2
 
-원문: (https://medium.com/@rksmith369/how-to-deploy-mern-stack-app-on-aws-ec2-with-ssl-nginx-the-right-way-e76c1a8cd6c6)[ https://medium.com/@rksmith369/how-to-deploy-mern-stack-app-on-aws-ec2-with-ssl-nginx-the-right-way-e76c1a8cd6c6]
+원문: [https://medium.com/@rksmith369/how-to-deploy-mern-stack-app-on-aws-ec2-with-ssl-nginx-the-right-way-e76c1a8cd6c6]( https://medium.com/@rksmith369/how-to-deploy-mern-stack-app-on-aws-ec2-with-ssl-nginx-the-right-way-e76c1a8cd6c6)
 
 ```bash
 sudo apt-get update
@@ -31,7 +31,7 @@ sudo apt-get install nginx git -y
 
 ```bash
 cd /var/www
-sudo git clone {project path on github(or others)}
+sudo git clone PROJECT_PATH_ON_GITHUB
 ```
 
 * git clone 후 npm install(혹은 yarn) 명령어는 아직 실행하지 않는다. 다음 단계에서 실행할 예정
@@ -43,7 +43,7 @@ sudo git clone {project path on github(or others)}
 ```bash
 sudo apt-get install -y build-essential openssl libssl-dev pkg-config
 cd /etc/nginx/sites-available
-sudo vim {your cloned repo’s name}
+sudo vim YOUR_CLONED_REPO_NAME
 ```
 
 ```bash
@@ -73,7 +73,7 @@ sudo rm default
 **Create a symbolic link from sites-enabled to sites-available**
 
 ```bash
-sudo ln -s /etc/nginx/sites-available/{repo name} /etc/nginx/sites-enabled/{repo name}
+sudo ln -s /etc/nginx/sites-available/REPO_NAME /etc/nginx/sites-enabled/REPO_NAME
 ```
 
 
@@ -90,8 +90,8 @@ sudo rm /etc/nginx/sites-enabled/default
 
 ```bash
 sudo npm install pm2 -gcd /var/www/sudo 
-chown -R ubuntu {AppName}
-cd {AppName}
+chown -R ubuntu REPO_NAME
+cd REPO_NAME
 sudo npm install
 ```
 

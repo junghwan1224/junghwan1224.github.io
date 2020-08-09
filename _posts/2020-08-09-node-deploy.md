@@ -21,8 +21,8 @@ sudo apt-get install -y build-essential openssl libssl-dev pkg-config
 ```bash
 sudo apt-get install -y build-essential openssl libssl-dev pkg-config
 sudo apt-get install -y nodejs nodejs-legacy 
-sudo apt-get install npm -ysudo 
-npm cache clean -fsudo npm install -g n
+sudo apt-get install npm -y 
+sudo npm cache clean -fsudo npm install -g n
 sudo n stable
 sudo apt-get install nginx git -y
 ```

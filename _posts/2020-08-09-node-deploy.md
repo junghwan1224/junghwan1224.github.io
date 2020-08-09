@@ -78,7 +78,7 @@ sudo ln -s /etc/nginx/sites-available/REPO_NAME /etc/nginx/sites-enabled/REPO_NA
 
 
 
-**nginx sites-enabled 디렉토리에 있는 dfeault 제거**
+**nginx sites-enabled 디렉토리에 있는 default 제거**
 
 ```bash
 sudo rm /etc/nginx/sites-enabled/default

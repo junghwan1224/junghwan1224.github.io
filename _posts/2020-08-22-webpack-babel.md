@@ -37,16 +37,27 @@ category: Deployment
 > 사용 모듈
 >
 > `@babel/core` babel을 사용하기 위해 추가해야 함
+>
 > `@babel/cli` 터미널에서 babel 명령어를 사용할 때 필요
+>
 > `babel-loader` babel과 webpack을 이용해 자바스크립트 파일을 트랜스파일링
+>
 > `css-loader` css 파일을 임포트할 수 있게끔 해준다
+>
 > `html-webpack-plugin` 번들링의 결과물을 html 파일로 반환
+>
 > `mini-css-extract-plugin` js 파일에 있는 css 코드를 별도의 css 파일로 변환
+>
 > `node-sass` sass를 css로 컴파일
+>
 > `sass-loader` node-sass를 이용해 sass -> css 작업
+>
 > `style-loader` 변환된 css를 DOM에 삽입(head 태그 안에 style을 넣어줌)
+>
 > `webpack` 웹팩 사용을 위해 필수로 추가해야 함
+>
 > `webpack-cli` 터미널에서 webpack 명령어를 사용하기 위해 필요
+>
 > `webpack-dev-server` 웹팩 개발서버 관련 모듈
 
 ```javascript

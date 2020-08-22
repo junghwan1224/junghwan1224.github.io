@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Webpack & Babel
-date: 2020-08-09 19:20:23 +0900
+date: 2020-08-22 12:00:00 +0900
 category: Deployment
 ---
 

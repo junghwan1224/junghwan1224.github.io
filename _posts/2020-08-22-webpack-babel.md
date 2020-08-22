@@ -34,10 +34,6 @@ category: Deployment
 
 ##### 필요 모듈(여러 삽질을 하느라 어떤 것이 필요하고 필요 없는지 잘 모른다.. 정리하면서 다시 추려내겠다.)
 
-```bash
-yarn add -D @babel/core @babel/preset-env @babel/preset-react babel-loader clean-webpack-plugin css-loader html-loader html-webpack-plugin mini-css-extract-plugin node-sass react react-dom sass-loader style-loader webpack webpack-cli webpack-dev-server
-```
-
 > 사용 모듈
 >
 > `@babel/core` babel을 사용하기 위해 추가해야 함

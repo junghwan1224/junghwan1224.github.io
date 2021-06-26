@@ -1,6 +1,6 @@
 ---
 layout: post
-title: github we found potential security vulnerabilities in your dependencies
+title: [github] we found potential security vulnerabilities in your dependencies
 date: 2021-06-26 12:00:00 +0900
 category: Git
 ---

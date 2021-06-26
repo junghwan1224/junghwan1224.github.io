@@ -19,4 +19,4 @@ category: Java
 </Host>      
 ```
 
-**Host 태그에서 `deployOnStartup` 과`autoDeploy` 속성 값을 false로 지정 **
+**Host 태그에서 `deployOnStartup` 과`autoDeploy` 속성 값을 false로 지정**

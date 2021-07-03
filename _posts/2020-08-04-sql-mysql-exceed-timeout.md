@@ -2,7 +2,7 @@
 layout: post
 title: MySQL - Lock wait timeout exceeded issue
 date: 2020-08-04 19:20:23 +0900
-category: SQL
+category: DB
 
 ---
 

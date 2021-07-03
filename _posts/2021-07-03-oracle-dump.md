@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Oracle Dump
+title: Oracle Dump(expdp / impdp)
 date: 2021-06-26 19:20:23 +0900
 category: DB
 
@@ -63,7 +63,7 @@ impdp USERNAME/PASSWORD@HOST:PORT/SID directory=DUMP dumpfile=FILE_NAME.dmp rema
 ##### 옵션
 
 - **table_exists_action**
-  	- skip:  테이블이 존재하는 경우, 데이터 가져오기 X / content=data_only 옵션이 있을 경우 table_exists_action 옵션은 유효하지 않다.
-  	- truncate: 테이블이 존재하는 경우, 기존 데이터 행을 truncate하고 데이터를 가져옴. 클러스터 테이블에서는 사용 X
-  	- append: 테이블이 존재하는 경우, 기존 데이터 행을 변경하지 않고 가져옴
-  	- replace: 테이블이 존재하는 경우, 테이블 자체를 내부적으로 drop하고 다시 생성하여 데이터를 가져옴
+  - skip:  테이블이 존재하는 경우, 데이터 가져오기 X / content=data_only 옵션이 있을 경우 table_exists_action 옵션은 유효하지 않다.
+  - truncate: 테이블이 존재하는 경우, 기존 데이터 행을 truncate하고 데이터를 가져옴. 클러스터 테이블에서는 사용 X
+  - append: 테이블이 존재하는 경우, 기존 데이터 행을 변경하지 않고 가져옴
+  - replace: 테이블이 존재하는 경우, 테이블 자체를 내부적으로 drop하고 다시 생성하여 데이터를 가져옴

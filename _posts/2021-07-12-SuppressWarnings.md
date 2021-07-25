@@ -1,6 +1,6 @@
 ---
 layout: post
-title: @SuppressWarnings
+title: SuppressWarnings Annotation
 date: 2021-07-17 19:20:23 +0900
 category: Java
 

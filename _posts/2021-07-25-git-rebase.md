@@ -5,8 +5,6 @@ date: 2021-07-25 12:00:00 +0900
 category: Git
 ---
 
-정리할 내용
-
 ## git rebase
 
 - 커밋의 base를 다시 정하는 작업
